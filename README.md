@@ -22,7 +22,7 @@ En este workshop vamos a crear una aplicación mobile utilizando React Native, p
 
 La idea del workshop es crear una aplicación sobre Marvel en la cual se incluyan por lo menos las siguientes funcionalidades:
 
- - Poder mostrar un listado de personajes de Marvel (Incluyendo nombre y foto)
+ - Poder mostrar un listado de personajes de Marvel (Incluyendo nombre y foto) Finalmente no se hará con Marvel porque la api no funciona. Usaremos pokeAPI
  - Poder filtrar el listado de personajes a partir de un input que ingrese el usuario y devuelva solo los personajes que comiencen con dicha palabra
  - Poder ir al detalle del personaje donde se deben poder seleccionar dos subpantallas:
     * Ver nuevamente el nombre y su foto pero también agregando la descripción 
@@ -37,7 +37,7 @@ Para poder obtener los resultados de los request a la API de Marvel vamos a nece
 
 La URL del request se formará de la siguiente forma:
 
-http://gateway.marvel.com/v1/public/characters?ts={ts}&apikey={publicKey}&hash={md5Hash}
+http://gateway.marvel.com/v1/public/characters?ts={ts}&apikey={publicKey}&hash={md5Hash} // NO SE USA
 
 Donde:
  * ts: es un timestamp en el cual pueden ingresar cualquier valor, por ejemplo `henry` o tomar el timestamp de la fecha actual con `Date.now()`
